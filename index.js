@@ -19,7 +19,7 @@ const getDftTraffic = async (event) => {
     });
 
     const client = await pool.connect();
-    const { rows } = await client.query('SELECT * FROM dfttraffictable LIMIT');
+    const { rows } = await client.query('SELECT * FROM dfttraffictable LIMIT 50');
     client.release();
     return {
         statusCode: 200,

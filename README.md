@@ -14,11 +14,16 @@ authorAvatar: 'https://avatars1.githubusercontent.com/u/13742415?s=200&v=4'
 
 ## Two deployed endpoints over AWS Lambda
 
+This call will return the first 50 records (can be improved with pagination)
 ``https://lp6cfmlq8c.execute-api.us-east-1.amazonaws.com/``
 
 and
 
+This call will return all results relative to the api provided
 ``https://lp6cfmlq8c.execute-api.us-east-1.amazonaws.com/count-point-id/{id}``
+
+The business logic can be found in:
+index.js and getTrafficRecord.js
 
 ## API Architecture
 
